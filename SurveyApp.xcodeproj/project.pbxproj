@@ -12,8 +12,6 @@
 		3CD8D6A82C07209B0092D373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD8D6A72C07209B0092D373 /* Assets.xcassets */; };
 		3CD8D6AB2C07209B0092D373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD8D6AA2C07209B0092D373 /* Preview Assets.xcassets */; };
 		3CD8D6B52C07209C0092D373 /* SurveyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8D6B42C07209C0092D373 /* SurveyAppTests.swift */; };
-		3CD8D6BF2C07209C0092D373 /* SurveyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8D6BE2C07209C0092D373 /* SurveyAppUITests.swift */; };
-		3CD8D6C12C07209C0092D373 /* SurveyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8D6C02C07209C0092D373 /* SurveyAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +40,6 @@
 		3CD8D6B02C07209C0092D373 /* SurveyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD8D6B42C07209C0092D373 /* SurveyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppTests.swift; sourceTree = "<group>"; };
 		3CD8D6BA2C07209C0092D373 /* SurveyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CD8D6BE2C07209C0092D373 /* SurveyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppUITests.swift; sourceTree = "<group>"; };
-		3CD8D6C02C07209C0092D373 /* SurveyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +117,6 @@
 		3CD8D6BD2C07209C0092D373 /* SurveyAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3CD8D6BE2C07209C0092D373 /* SurveyAppUITests.swift */,
-				3CD8D6C02C07209C0092D373 /* SurveyAppUITestsLaunchTests.swift */,
 			);
 			path = SurveyAppUITests;
 			sourceTree = "<group>";
@@ -274,8 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD8D6C12C07209C0092D373 /* SurveyAppUITestsLaunchTests.swift in Sources */,
-				3CD8D6BF2C07209C0092D373 /* SurveyAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
