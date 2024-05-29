@@ -1,0 +1,14 @@
+xcassets:
+  inputs:
+    - SurveyApp/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: SurveyApp/Generated/assets-images.swift
+strings:
+  inputs:
+    - SurveyApp/Resources/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: SurveyApp/Generated/Strings.swift
+      params:
+        enumName: LocalizationKey
