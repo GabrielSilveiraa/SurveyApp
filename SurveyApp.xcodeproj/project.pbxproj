@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C877DBB2C077CAF001B80B0 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C877DB92C077CAF001B80B0 /* SurveyView.swift */; };
+		3C877DBC2C077CAF001B80B0 /* SurveyReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C877DBA2C077CAF001B80B0 /* SurveyReducer.swift */; };
+		3C877DBF2C077D04001B80B0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3C877DBE2C077D04001B80B0 /* ComposableArchitecture */; };
+		3CA54D782C08B68A00E2503F /* GMSNewtorkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 3CA54D772C08B68A00E2503F /* GMSNewtorkLayer */; };
+		3CD8CC362C07A074004F7447 /* ST_SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8CC352C07A074004F7447 /* ST_SurveyView.swift */; };
 		3CD8D6A42C07209A0092D373 /* SurveyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8D6A32C07209A0092D373 /* SurveyAppApp.swift */; };
 		3CD8D6A62C07209A0092D373 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8D6A52C07209A0092D373 /* ContentView.swift */; };
 		3CD8D6A82C07209B0092D373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD8D6A72C07209B0092D373 /* Assets.xcassets */; };
@@ -19,6 +24,21 @@
 		3CD8D6DE2C073AF40092D373 /* ST_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8D6DD2C073AF40092D373 /* ST_ContentView.swift */; };
 		3CD8D6E22C073B2A0092D373 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 3CD8D6E12C073B2A0092D373 /* Quick */; };
 		3CD8D6E42C0762ED0092D373 /* PreviewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8D6E32C0762ED0092D373 /* PreviewConfiguration.swift */; };
+		3CDA07CE2C086753009F333A /* QuestionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07CD2C086753009F333A /* QuestionDataModel.swift */; };
+		3CDA07D22C0867A3009F333A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07D12C0867A3009F333A /* Question.swift */; };
+		3CDA07D82C086990009F333A /* GetQuestionsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07D72C086990009F333A /* GetQuestionsEndpoint.swift */; };
+		3CDA07DA2C086A4E009F333A /* SubmitAnswerEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07D92C086A4E009F333A /* SubmitAnswerEndpoint.swift */; };
+		3CDA07DC2C086AB7009F333A /* AnswerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07DB2C086AB7009F333A /* AnswerDataModel.swift */; };
+		3CDA07DF2C086B44009F333A /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07DE2C086B44009F333A /* Encodable+JSON.swift */; };
+		3CDA07E22C086FEA009F333A /* GetQuestionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07E12C086FEA009F333A /* GetQuestionsDataSource.swift */; };
+		3CDA07E52C087337009F333A /* GetQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07E42C087337009F333A /* GetQuestions.swift */; };
+		3CDA07E72C08767D009F333A /* SubmitAnswerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07E62C08767D009F333A /* SubmitAnswerDataSource.swift */; };
+		3CDA07E92C087780009F333A /* SubmitAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07E82C087780009F333A /* SubmitAnswer.swift */; };
+		3CDA07EF2C0880C0009F333A /* GMSNewtorkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 3CDA07EE2C0880C0009F333A /* GMSNewtorkLayer */; };
+		3CDA07F12C088CD0009F333A /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA07F02C088CD0009F333A /* BannerView.swift */; };
+		3CDF631A2C08BA6B00EC44EE /* SurveyReducerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF63192C08BA6B00EC44EE /* SurveyReducerSpec.swift */; };
+		3CDF631D2C08BA8D00EC44EE /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 3CDF631C2C08BA8D00EC44EE /* Nimble */; };
+		3CDF63202C08D69C00EC44EE /* SurveyView_SnapshotPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF631F2C08D69C00EC44EE /* SurveyView_SnapshotPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C877DB92C077CAF001B80B0 /* SurveyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
+		3C877DBA2C077CAF001B80B0 /* SurveyReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyReducer.swift; sourceTree = "<group>"; };
+		3CD8CC352C07A074004F7447 /* ST_SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_SurveyView.swift; sourceTree = "<group>"; };
 		3CD8D6A02C07209A0092D373 /* SurveyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD8D6A32C07209A0092D373 /* SurveyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppApp.swift; sourceTree = "<group>"; };
 		3CD8D6A52C07209A0092D373 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +66,19 @@
 		3CD8D6D92C0738D70092D373 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3CD8D6DD2C073AF40092D373 /* ST_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_ContentView.swift; sourceTree = "<group>"; };
 		3CD8D6E32C0762ED0092D373 /* PreviewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewConfiguration.swift; sourceTree = "<group>"; };
+		3CDA07CD2C086753009F333A /* QuestionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataModel.swift; sourceTree = "<group>"; };
+		3CDA07D12C0867A3009F333A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3CDA07D72C086990009F333A /* GetQuestionsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuestionsEndpoint.swift; sourceTree = "<group>"; };
+		3CDA07D92C086A4E009F333A /* SubmitAnswerEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitAnswerEndpoint.swift; sourceTree = "<group>"; };
+		3CDA07DB2C086AB7009F333A /* AnswerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDataModel.swift; sourceTree = "<group>"; };
+		3CDA07DE2C086B44009F333A /* Encodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
+		3CDA07E12C086FEA009F333A /* GetQuestionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuestionsDataSource.swift; sourceTree = "<group>"; };
+		3CDA07E42C087337009F333A /* GetQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuestions.swift; sourceTree = "<group>"; };
+		3CDA07E62C08767D009F333A /* SubmitAnswerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitAnswerDataSource.swift; sourceTree = "<group>"; };
+		3CDA07E82C087780009F333A /* SubmitAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitAnswer.swift; sourceTree = "<group>"; };
+		3CDA07F02C088CD0009F333A /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		3CDF63192C08BA6B00EC44EE /* SurveyReducerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyReducerSpec.swift; sourceTree = "<group>"; };
+		3CDF631F2C08D69C00EC44EE /* SurveyView_SnapshotPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView_SnapshotPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C877DBF2C077D04001B80B0 /* ComposableArchitecture in Frameworks */,
+				3CA54D782C08B68A00E2503F /* GMSNewtorkLayer in Frameworks */,
+				3CDA07EF2C0880C0009F333A /* GMSNewtorkLayer in Frameworks */,
 				3CD8D6CF2C0735230092D373 /* PreviewSnapshots in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDF631D2C08BA8D00EC44EE /* Nimble in Frameworks */,
 				3CD8D6E22C073B2A0092D373 /* Quick in Frameworks */,
 				3CD8D6D12C0735230092D373 /* PreviewSnapshotsTesting in Frameworks */,
 			);
@@ -66,6 +106,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C877DB72C077C2B001B80B0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3CF30ACB2C077D9400F5F91D /* Welcome */,
+				3C877DB82C077CAF001B80B0 /* Survey */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3C877DB82C077CAF001B80B0 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				3CDF631E2C08D66F00EC44EE /* SnapshotPreview */,
+				3C877DB92C077CAF001B80B0 /* SurveyView.swift */,
+				3C877DBA2C077CAF001B80B0 /* SurveyReducer.swift */,
+				3CDA07F02C088CD0009F333A /* BannerView.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
 		3CD8D6972C07209A0092D373 = {
 			isa = PBXGroup;
 			children = (
@@ -87,11 +147,13 @@
 		3CD8D6A22C07209A0092D373 /* SurveyApp */ = {
 			isa = PBXGroup;
 			children = (
-				3CD8D6DA2C0738D70092D373 /* Generated */,
+				3C877DB72C077C2B001B80B0 /* Scenes */,
+				3CDA07D02C08678B009F333A /* Domain */,
+				3CDA07C82C086701009F333A /* Data */,
+				3CDA07DD2C086B29009F333A /* Helpers */,
 				3CD8D6D22C0737B20092D373 /* Resources */,
-				3CD8D6A32C07209A0092D373 /* SurveyAppApp.swift */,
-				3CD8D6A52C07209A0092D373 /* ContentView.swift */,
 				3CD8D6A92C07209B0092D373 /* Preview Content */,
+				3CD8D6A32C07209A0092D373 /* SurveyAppApp.swift */,
 				3CD8D6E32C0762ED0092D373 /* PreviewConfiguration.swift */,
 			);
 			path = SurveyApp;
@@ -109,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				3CD8D6DD2C073AF40092D373 /* ST_ContentView.swift */,
+				3CD8CC352C07A074004F7447 /* ST_SurveyView.swift */,
+				3CDF63192C08BA6B00EC44EE /* SurveyReducerSpec.swift */,
 			);
 			path = SurveyAppTests;
 			sourceTree = "<group>";
@@ -116,6 +180,7 @@
 		3CD8D6D22C0737B20092D373 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3CD8D6DA2C0738D70092D373 /* Generated */,
 				3CD8D6A72C07209B0092D373 /* Assets.xcassets */,
 				3CD8D6D52C0738600092D373 /* Localizable.strings */,
 			);
@@ -129,6 +194,85 @@
 				3CD8D6D92C0738D70092D373 /* Strings.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		3CDA07C82C086701009F333A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA07E02C086FD9009F333A /* DataSources */,
+				3CDA07D62C086981009F333A /* Enpoints */,
+				3CDA07CF2C086757009F333A /* DataModel */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3CDA07CF2C086757009F333A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA07CD2C086753009F333A /* QuestionDataModel.swift */,
+				3CDA07DB2C086AB7009F333A /* AnswerDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		3CDA07D02C08678B009F333A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA07D12C0867A3009F333A /* Question.swift */,
+				3CDA07E32C08732B009F333A /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3CDA07D62C086981009F333A /* Enpoints */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA07D72C086990009F333A /* GetQuestionsEndpoint.swift */,
+				3CDA07D92C086A4E009F333A /* SubmitAnswerEndpoint.swift */,
+			);
+			path = Enpoints;
+			sourceTree = "<group>";
+		};
+		3CDA07DD2C086B29009F333A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA07DE2C086B44009F333A /* Encodable+JSON.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3CDA07E02C086FD9009F333A /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA07E12C086FEA009F333A /* GetQuestionsDataSource.swift */,
+				3CDA07E62C08767D009F333A /* SubmitAnswerDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		3CDA07E32C08732B009F333A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA07E42C087337009F333A /* GetQuestions.swift */,
+				3CDA07E82C087780009F333A /* SubmitAnswer.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3CDF631E2C08D66F00EC44EE /* SnapshotPreview */ = {
+			isa = PBXGroup;
+			children = (
+				3CDF631F2C08D69C00EC44EE /* SurveyView_SnapshotPreview.swift */,
+			);
+			path = SnapshotPreview;
+			sourceTree = "<group>";
+		};
+		3CF30ACB2C077D9400F5F91D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3CD8D6A52C07209A0092D373 /* ContentView.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +293,9 @@
 			name = SurveyApp;
 			packageProductDependencies = (
 				3CD8D6CE2C0735230092D373 /* PreviewSnapshots */,
+				3C877DBE2C077D04001B80B0 /* ComposableArchitecture */,
+				3CDA07EE2C0880C0009F333A /* GMSNewtorkLayer */,
+				3CA54D772C08B68A00E2503F /* GMSNewtorkLayer */,
 			);
 			productName = SurveyApp;
 			productReference = 3CD8D6A02C07209A0092D373 /* SurveyApp.app */;
@@ -171,6 +318,7 @@
 			packageProductDependencies = (
 				3CD8D6D02C0735230092D373 /* PreviewSnapshotsTesting */,
 				3CD8D6E12C073B2A0092D373 /* Quick */,
+				3CDF631C2C08BA8D00EC44EE /* Nimble */,
 			);
 			productName = SurveyAppTests;
 			productReference = 3CD8D6B02C07209C0092D373 /* SurveyAppTests.xctest */;
@@ -207,6 +355,9 @@
 			packageReferences = (
 				3CD8D6CD2C0735230092D373 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */,
 				3CD8D6E02C073B2A0092D373 /* XCRemoteSwiftPackageReference "Quick" */,
+				3C877DBD2C077D04001B80B0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				3CA54D762C08B68A00E2503F /* XCRemoteSwiftPackageReference "GMSNetworkLayer" */,
+				3CDF631B2C08BA8D00EC44EE /* XCRemoteSwiftPackageReference "Nimble" */,
 			);
 			productRefGroup = 3CD8D6A12C07209A0092D373 /* Products */;
 			projectDirPath = "";
@@ -243,11 +394,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDA07DA2C086A4E009F333A /* SubmitAnswerEndpoint.swift in Sources */,
 				3CD8D6E42C0762ED0092D373 /* PreviewConfiguration.swift in Sources */,
 				3CD8D6DB2C0738D70092D373 /* assets-images.swift in Sources */,
+				3C877DBB2C077CAF001B80B0 /* SurveyView.swift in Sources */,
+				3CDA07D82C086990009F333A /* GetQuestionsEndpoint.swift in Sources */,
+				3CDA07E22C086FEA009F333A /* GetQuestionsDataSource.swift in Sources */,
+				3CDA07DF2C086B44009F333A /* Encodable+JSON.swift in Sources */,
+				3CDA07D22C0867A3009F333A /* Question.swift in Sources */,
 				3CD8D6A62C07209A0092D373 /* ContentView.swift in Sources */,
+				3CDA07E72C08767D009F333A /* SubmitAnswerDataSource.swift in Sources */,
+				3CDA07DC2C086AB7009F333A /* AnswerDataModel.swift in Sources */,
+				3CDA07E92C087780009F333A /* SubmitAnswer.swift in Sources */,
 				3CD8D6DC2C0738D70092D373 /* Strings.swift in Sources */,
+				3CDA07CE2C086753009F333A /* QuestionDataModel.swift in Sources */,
+				3CDA07F12C088CD0009F333A /* BannerView.swift in Sources */,
+				3CDF63202C08D69C00EC44EE /* SurveyView_SnapshotPreview.swift in Sources */,
+				3CDA07E52C087337009F333A /* GetQuestions.swift in Sources */,
 				3CD8D6A42C07209A0092D373 /* SurveyAppApp.swift in Sources */,
+				3C877DBC2C077CAF001B80B0 /* SurveyReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +421,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD8D6DE2C073AF40092D373 /* ST_ContentView.swift in Sources */,
+				3CD8CC362C07A074004F7447 /* ST_SurveyView.swift in Sources */,
+				3CDF631A2C08BA6B00EC44EE /* SurveyReducerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +696,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3C877DBD2C077D04001B80B0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.4;
+			};
+		};
+		3CA54D762C08B68A00E2503F /* XCRemoteSwiftPackageReference "GMSNetworkLayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GabrielSilveiraa/GMSNetworkLayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
 		3CD8D6CD2C0735230092D373 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/doordash-oss/swiftui-preview-snapshots";
@@ -545,9 +728,27 @@
 				kind = branch;
 			};
 		};
+		3CDF631B2C08BA8D00EC44EE /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3C877DBE2C077D04001B80B0 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C877DBD2C077D04001B80B0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		3CA54D772C08B68A00E2503F /* GMSNewtorkLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CA54D762C08B68A00E2503F /* XCRemoteSwiftPackageReference "GMSNetworkLayer" */;
+			productName = GMSNewtorkLayer;
+		};
 		3CD8D6CE2C0735230092D373 /* PreviewSnapshots */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3CD8D6CD2C0735230092D373 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */;
@@ -562,6 +763,15 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3CD8D6E02C073B2A0092D373 /* XCRemoteSwiftPackageReference "Quick" */;
 			productName = Quick;
+		};
+		3CDA07EE2C0880C0009F333A /* GMSNewtorkLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GMSNewtorkLayer;
+		};
+		3CDF631C2C08BA8D00EC44EE /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CDF631B2C08BA8D00EC44EE /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

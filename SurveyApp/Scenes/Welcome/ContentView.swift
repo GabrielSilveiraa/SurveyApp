@@ -15,15 +15,13 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Spacer()
-                Button(action: {
-                    // TODO: Show next screen
-                }) {
+                NavigationLink(destination: SurveyView.buildDefault()) {
                     Text(LocalizationKey.welcomeCtaTitle)
                         .font(.headline)
                         .foregroundColor(.blue)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color(asset: Asset.primary))
+                        .background(Color(asset: Asset.main))
                         .cornerRadius(buttonCornerRadius)
                         .shadow(radius: 5)
                 }
@@ -41,7 +39,7 @@ struct ContentView_Previews: PreviewProvider {
         snapshots.previews.previewLayout(.sizeThatFits)
     }
 
-    static var snapshots: PreviewSnapshots<PreviewConfiguration> {
+    static var snapshots: PreviewSnapshots<PreviewConfiguration<Void>> {
         PreviewSnapshots(
             configurations: [
                 .init(name: "Base Welcome View", state: .init()),
