@@ -1,12 +1,15 @@
 import SwiftUI
 
-struct PreviewConfiguration {
+struct PreviewConfiguration<State> {
     let colorScheme: ColorScheme
     let dynamicTypeSize: DynamicTypeSize
+    let state: State?
 
     init(colorScheme: ColorScheme = .light,
-         dynamicTypeSize: DynamicTypeSize = .large) {
+         dynamicTypeSize: DynamicTypeSize = .large,
+         state: State? = nil) {
         self.colorScheme = colorScheme
         self.dynamicTypeSize = dynamicTypeSize
+        self.state = state
     }
 }

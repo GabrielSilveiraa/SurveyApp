@@ -14,28 +14,13 @@ extension SurveyView_Previews {
     static var snapshots: PreviewSnapshots<PreviewConfiguration<SurveyReducer.State>> {
         PreviewSnapshots(
             configurations: [
-                .init(name: "Default SurveyView", state: .init()),
-                .init(name: "Dark SurveyView", state: .init(colorScheme: .dark)),
-                .init(name: "xxxLarge SurveyView", state: .init(dynamicTypeSize: .accessibility5)),
-                .init(name: "Submited SurveyView",
-                      state: .init(state: .init(questions: [
-                        Question(id: 1,
-                                 text: "Is it a good snapshot test?",
-                                 answer: "Yes!",
-                                 isSubmitted: true),
-                        Question(id: 2,
-                                 text: "Is it another good snapshot test?")
-                      ]))),
-                .init(name: "Dark Submited SurveyView",
-                      state: .init(colorScheme: .dark,
-                                   state: .init(questions: [
-                                    Question(id: 1,
-                                             text: "Is it a good snapshot test?",
-                                             answer: "Yes!",
-                                             isSubmitted: true),
-                                    Question(id: 2,
-                                             text: "Is it another good snapshot test?")
-                                   ]))),
+                .init(name: "Default SurveyView", state: .init(state: .init(questions: self.questions, 
+                                                                            currentQuestionIndex: 0))),
+                .init(name: "Dark SurveyView", state: .init(colorScheme: .dark, state: .init(questions: self.questions,
+                                                                                             currentQuestionIndex: 0))),
+                .init(name: "xxxLarge SurveyView", state: .init(dynamicTypeSize: .accessibility5,
+                                                                state: .init(questions: self.questions, 
+                                                                             currentQuestionIndex: 0)))
             ],
             configure: { configuration in
                 NavigationStack {
@@ -50,8 +35,7 @@ extension SurveyView_Previews {
 
     static let previewEffects: SurveyReducer.Effects = .init(
         getQuestions: {
-            Just([Question(id: 1, text: "Question 1"),
-                  Question(id: 2, text: "Question 2")])
+            Just(questions)
             .setFailureType(to: Error.self)
             .eraseToAnyPublisher()
         },
@@ -61,4 +45,11 @@ extension SurveyView_Previews {
         },
         scheduler: .main
     )
+
+    static let questions = [Question(id: 1,
+                                     text: "Is it a good snapshot test?",
+                                     answer: "Yes!",
+                                     isSubmitted: true),
+                            Question(id: 2,
+                                     text: "Is it another good snapshot test?")]
 }
