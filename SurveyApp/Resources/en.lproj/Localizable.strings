@@ -9,3 +9,17 @@
 // - Mark: Welcome
 "welcome_title" = "Welcome";
 "welcome_cta_title" = "Start survey";
+
+// - Mark: Survey
+"survey_title" = "Questions submitted: %1$@";
+"survey_placeholder" = "Type here for an answer...";
+"survey_cta" = "Submit";
+"survey_cta_disabled" = "Already Submitted";
+"survey_navigation_title" = "Question %1$@/%2$@";
+"survey_navigation_previous_title" = "Previous";
+"survey_navigation_next_title" = "Next";
+"survey_error_no_questions" = "No questions available.";
+"survey_banner_error_retry_cta" = "Retry";
+"survey_banner_error_title" = "Failure!";
+"survey_banner_success_title" = "Success";
+
