@@ -68,7 +68,7 @@ final class SurveyReducer: Reducer {
 
     var body: some ReducerOf<SurveyReducer> {
         Reduce { [weak self] state, action in
-            guard let self else { return .none }
+            guard let self = self else { return .none }
             switch action {
             case .loadQuestions:
                 state.isLoading = true
