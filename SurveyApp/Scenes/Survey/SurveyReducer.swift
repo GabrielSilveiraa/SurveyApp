@@ -96,6 +96,7 @@ final class SurveyReducer: Reducer {
                     state.bannerPresentation = .show(.error)
                     state.questions[state.currentQuestionIndex].submissionFailed = true
                 }
+                return effects.hideBannerAfter2Seconds()
 
             case .previousQuestion:
                 if state.currentQuestionIndex > 0 {
@@ -161,6 +162,15 @@ extension SurveyReducer {
                 submitAnswer(answer)
                     .receive(on: scheduler)
                     .map { .answerSubmissionResponse($0) }
+            }
+        }
+
+        func hideBannerAfter2Seconds() -> Effect<Action> {
+            .publisher {
+                Just(())
+                    .delay(for: .seconds(2), scheduler: scheduler)
+                    .receive(on: scheduler)
+                    .map { .hideBanner }
             }
         }
     }

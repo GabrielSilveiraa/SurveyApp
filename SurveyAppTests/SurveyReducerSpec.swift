@@ -29,7 +29,6 @@ class SurveyReducerSpec: AsyncSpec {
                         $0.isLoading = true
                     }
                     await scheduler.run()
-                    //                    store.receive(.questionLoaded)
                     await store.receive(.questionsLoaded(.success([
                         Question(id: 1, text: "Question 1"),
                         Question(id: 2, text: "Question 2")
@@ -63,10 +62,14 @@ class SurveyReducerSpec: AsyncSpec {
                 it("should submit the answer successfully") { @MainActor in
                     setEffects(initialState: .init(questions: [.init(id: 1, text: "Question 1")], currentQuestionIndex: 0))
                     await store.send(.submitAnswer)
-                    await scheduler.run()
+                    await scheduler.advance()
                     await store.receive(.answerSubmissionResponse(true)) {
                         $0.bannerPresentation = .show(.success)
                         $0.questions[0].isSubmitted = true
+                    }
+                    await scheduler.run()
+                    await store.receive(.hideBanner) {
+                        $0.bannerPresentation = .hide
                     }
                 }
 
@@ -77,10 +80,14 @@ class SurveyReducerSpec: AsyncSpec {
                     }, initialState: .init(questions: [.init(id: 1, text: "Question 1")], currentQuestionIndex: 0))
 
                     await store.send(.submitAnswer)
-                    await scheduler.run()
+                    await scheduler.advance()
                     await store.receive(.answerSubmissionResponse(false)) {
                         $0.bannerPresentation = .show(.error)
                         $0.questions[0].submissionFailed = true
+                    }
+                    await scheduler.run()
+                    await store.receive(.hideBanner) {
+                        $0.bannerPresentation = .hide
                     }
                 }
             }
@@ -127,12 +134,18 @@ class SurveyReducerSpec: AsyncSpec {
                 }
 
                 it("should retry submission when banner is shown") { @MainActor in
-                    setEffects(initialState: .init(questions: [Question(id: 1, text: "Question 1", answer: "Answer", submissionFailed: true)], currentQuestionIndex: 0))
+                    setEffects(initialState: .init(questions: [Question(id: 1, text: "Question 1", 
+                                                                        answer: "Answer",
+                                                                        submissionFailed: true)], currentQuestionIndex: 0))
                     await store.send(.retrySubmission)
-                    await scheduler.run()
+                    await scheduler.advance()
                     await store.receive(.answerSubmissionResponse(true)) {
                         $0.bannerPresentation = .show(.success)
                         $0.questions[0].isSubmitted = true
+                    }
+                    await scheduler.run()
+                    await store.receive(.hideBanner) {
+                        $0.bannerPresentation = .hide
                     }
                 }
             }
